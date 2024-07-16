@@ -4,3 +4,4 @@
 *.run.xml
 *.gz
 /notebooks/.ipynb_checkpoints/
+/egt_graph.html
