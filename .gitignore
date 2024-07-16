@@ -3,5 +3,4 @@
 *.log
 *.run.xml
 *.gz
-
-
+/notebooks/.ipynb_checkpoints/

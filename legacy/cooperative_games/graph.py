@@ -62,7 +62,7 @@ class CoopGraph:
         self.payoff_matrices = payoff_matrices
 
     def visualize_graph_structure(self):
-        graph_filename = '../egt_graph.html'
+        graph_filename = '../../egt_graph.html'
         num_digits_round = 3
         # Create graph
         G = nx.DiGraph()
