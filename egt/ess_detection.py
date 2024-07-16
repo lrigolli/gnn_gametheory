@@ -11,7 +11,7 @@ from utils.pydantic_types import EGTGraphType
 def ess_check_helper(x: np.array, p: torch.Tensor, graph: EGTGraphType, node_idx: int):
     """
     Define function used to check if a point is ESS for EGT graph (generalization to case of graphs  of function in
-    Theorem 6.4.1 of "Evolutionary Games and Population Dynamics" by Hofbauer and Sigmund).
+    Section 7.2 of "Evolutionary Games and Population Dynamics" by Hofbauer and Sigmund).
     It returns a function for each node index. In order to check if point p is ESS we need to make sure each of the
     returned function takes a minimum in point p.
     :param x: point in neighbourood of 0 \in R^{n_nodes\times (n_strat-1)} (stored as vector)
@@ -52,7 +52,7 @@ def ess_check_helper(x: np.array, p: torch.Tensor, graph: EGTGraphType, node_idx
     # f_p^i(p) = 0
     # h_p^i(0) = 0
 
-    # (function h for single node graph used in Thm 6.4.1:  p^T*F*y - y^T*F*y)
+    # (function h for single node graph used in Section 7.2:  p^T*F*y - y^T*F*y)
 
     # get function
     h = 0

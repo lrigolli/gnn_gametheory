@@ -54,7 +54,7 @@ class EGTGraph:
         self.payoff_matrices = payoff_matrices
 
     def visualize_graph_structure(self, filename='egt_graph.html'):
-        graph_filename = f'../{filename}'
+        graph_filename = f'{filename}'
         num_digits_round = 3
         # Create graph
         G = nx.DiGraph()
@@ -63,7 +63,7 @@ class EGTGraph:
             label_str += "Pop: " + str(tuple(np.round(self.nodes_feats[i].numpy(), num_digits_round))) + "\n"
             label_str += "Fit: " + str(tuple(np.round(self.nodes_strategy_fit[i].numpy(), num_digits_round)))
             title_str = f"Payoff matrix \n {np.matrix(self.payoff_matrices[i].numpy())}"
-            G.add_node(id, size=20, label=label_str, title=title_str)
+            G.add_node(i, size=20, label=label_str, title=title_str)
         for edge in self.edges_list:
             w = np.round(self.adjacency_matrix[edge[0], edge[1]].item(), num_digits_round)
             G.add_edge(edge[0], edge[1], weight=w, title=w)
@@ -80,8 +80,6 @@ class EGTGraph:
         display(HTML(html_content))
 
     def describe_egtgraph(self, verbose=False):
-        self.visualize_graph_structure()
-
         if verbose:
             print(f"Num nodes: {self.num_nodes}")
             print(f"Num strategies: {self.num_feats}")
@@ -93,6 +91,8 @@ class EGTGraph:
                 print(f"Node {i}")
                 print(np.matrix(self.payoff_matrices[i]))
             print(f"Nodes features: {np.matrix(self.nodes_feats)}")
+
+        self.visualize_graph_structure()
 
     def get_nodes_strategy_fitness(self, X: torch.Tensor) -> torch.Tensor:
         """

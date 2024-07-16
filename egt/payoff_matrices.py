@@ -40,3 +40,12 @@ def define_evo_stable_set_payoff() -> torch.Tensor:
     return torch.tensor([[0, 2, 0], [2, 0, 0], [1, 1, 0]], dtype=torch.float)  # R, S, P
 
 # circulant matrix payoff
+# cancer game https://arxiv.org/pdf/1803.00607
+#A- A+ P C
+#A- 1 1+d 1 1-c
+#A+ 1-a+d 1-a+d+f 1-a+d 1-c-a+d
+#P 1+g 1+d+g 1+g (1+g)(1-c)
+#C 1-b+c 1-b+d+e 1-b+e 1-b
+
+
+# examples https://michaellevet.wordpress.com/2016/05/14/evolutionary-stable-strategies-part-2/

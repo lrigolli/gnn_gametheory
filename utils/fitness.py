@@ -71,6 +71,8 @@ def mean_squared_diff_fitness_graph(nodes_feats: torch.Tensor,
         for i in range(graph.num_feats):
             for j in range(graph.num_feats):
                 # if strategy is not represented in population and has lowest payoff, it doesn't contribute to loss
+                # compare with replicator equation x_i' = x_i (f_i-avg_fit)
+                # x rest point iff x_i = 0 or f_i=avg_fit)
                 if (f_k[j] > min(f_k)) or (nodes_feats[k, i] >= tol_extinction):
                     loss += (f_k[i] - f_k[j]) ** 2
     return loss
