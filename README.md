@@ -35,17 +35,13 @@ If *n=1* the graph consists of a single population, which is the original settin
 Even in this simple setting, up to the best of author's knowledge, there are not many tools for ESS detection and the existing ones like [egttolls](https://pypi.org/project/egttools/) are more focused on exploring dynamics in low dimensions, but do not allow to find ESS when many strategies are possible. 
 
 *Example: perturbed rock-scissors-paper game in single node. ESS = (1/3 R, 1/3 S, 1/3 P)*   
-
-![](https://github.com/lrigolli/gnn_gametheory/blob/main/latex_docs/figures/hawk_dove_ex.png?raw=true)
-
-
-
-
+![](https://github.com/lrigolli/gnn_gametheory/blob/main/latex_docs/figures/rsp_perturbed.png?raw=true)
 
 If *n>1* the situation becomes more complex and this tool is the first attempt to study it, with the help of Graph Neural Networks.
   
 *Example: hawk-dove game in two nodes with constant adjacency matrix (v1=0.2, v2=0.6, c1=c2=1). ESS is (v1+v2)/(c1+c2) hawks.*  
-<img src="./latex_docs/figures/hawk_dove_two_nodes_ex.png" alt="drawing" width="400" height=200"/> 
+![](https://github.com/lrigolli/gnn_gametheory/blob/main/latex_docs/figures/hawk_dove_two_nodes_ex.png?raw=true)
+
 
 ### Get started
 Once the project is set up, you should choose the graph to be analyzed by specifying:  
