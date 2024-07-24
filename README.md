@@ -34,6 +34,7 @@ If *n=1* the graph consists of a single population, which is the original settin
 Even in this simple setting, up to the best of author's knowledge, there are not many tools for ESS detection and the existing ones like [egttolls](https://pypi.org/project/egttools/) are more focused on exploring dynamics in low dimensions, but do not allow to find ESS when many strategies are possible. 
 
 *Example: perturbed rock-scissors-paper game in single node. ESS = (1/3 R, 1/3 S, 1/3 P)*  
+!(plot)[./latex_docs/figures/rsp_perturbed.png]
 <img src="./latex_docs/figures/rsp_perturbed.png" alt="drawing" width="300" height=200"/> 
 
 If *n>1* the situation becomes more complex and this tool is the first attempt to study it, with the help of Graph Neural Networks.
