@@ -36,14 +36,7 @@ Even in this simple setting, up to the best of author's knowledge, there are not
 
 *Example: perturbed rock-scissors-paper game in single node. ESS = (1/3 R, 1/3 S, 1/3 P)*   
 
-!(plot)[./latex_docs/figures/rsp_perturbed.png]
-<img src="latex_docs/figures/rsp_perturbed.png" alt="drawing" width="300" height=200"/> 
-
-<img src="latex_docs/figures/rsp_perturbed.png" alt="drawing" width="300" height=200"/> 
-
-
-
-![alt text](https://github.com/lrigolli/gnn_gametheory/blob/main/latex_docs/figures/hawk_dove_ex.png?raw=true)
+![](https://github.com/lrigolli/gnn_gametheory/blob/main/latex_docs/figures/hawk_dove_ex.png?raw=true)
 
 
 
