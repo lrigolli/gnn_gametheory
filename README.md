@@ -30,12 +30,24 @@ Let us consider a graph *G* with:
 
 Such a graph describes the fitness of different strategies in populations that are spatially linked and in which environment determines the payoff of a strategy.
 
+
 If *n=1* the graph consists of a single population, which is the original setting considered by Maynard Smith in his seminal work on ESS. 
 Even in this simple setting, up to the best of author's knowledge, there are not many tools for ESS detection and the existing ones like [egttolls](https://pypi.org/project/egttools/) are more focused on exploring dynamics in low dimensions, but do not allow to find ESS when many strategies are possible. 
 
-*Example: perturbed rock-scissors-paper game in single node. ESS = (1/3 R, 1/3 S, 1/3 P)*  
+*Example: perturbed rock-scissors-paper game in single node. ESS = (1/3 R, 1/3 S, 1/3 P)*   
+
 !(plot)[./latex_docs/figures/rsp_perturbed.png]
-<img src="./latex_docs/figures/rsp_perturbed.png" alt="drawing" width="300" height=200"/> 
+<img src="latex_docs/figures/rsp_perturbed.png" alt="drawing" width="300" height=200"/> 
+
+<img src="latex_docs/figures/rsp_perturbed.png" alt="drawing" width="300" height=200"/> 
+
+
+
+![alt text](https://github.com/lrigolli/gnn_gametheory/blob/main/latex_docs/figures/hawk_dove_ex.png?raw=true)
+
+
+
+
 
 If *n>1* the situation becomes more complex and this tool is the first attempt to study it, with the help of Graph Neural Networks.
   
